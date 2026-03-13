@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Monociclos Mayteh</title>
 </head>
-<body>
+<body class="bg-slate-100 text-slate-800">
 
   <!-- 
     CONTENEDOR GENERAL DE LA PÁGINA
@@ -14,7 +15,7 @@
     En HTML no es obligatorio usar un contenedor general,
     pero muchas veces se usa para organizar mejor la estructura.
   -->
-  <div>
+  <div class="min-h-screen flex flex-col">
 
     <!-- 
       =========================================
@@ -25,8 +26,9 @@
       Normalmente contiene el título, logotipo, eslogan y, muchas veces,
       el menú de navegación principal.
     -->
-    <header>
-
+    <header class="bg-slate-900 text-white shadow-lg">
+      <div class="max-w-7x1 mx-auto px-4 md:px-8 py-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
       <!-- 
         BLOQUE DEL TÍTULO PRINCIPAL DE LA WEB
 
@@ -55,7 +57,8 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-
+      </div>
+      </div>
     </header>
 
     <!-- 
